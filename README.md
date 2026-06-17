@@ -41,16 +41,16 @@ FROM employees;
 ```
 
 ---
-##3. Date and time function
-  Date function performs operation on date adn time data.
- Function covered :
- -NOW()
- -CURRENT_DATE()
- -CURRENT_TIME()
- -DATE_PART()
- -AGE()
- -EXTRACT()
+## 3. Date and Time Function
+Date function performs operation on date and time data.
 
+Function covered:
+- NOW()
+  - CURRENT_DATE()
+- CURRENT_TIME()
+ - DATE_PART()
+ - AGE()
+- EXTRACT()
 ## 🎯 Purpose
 
 This repository is created for:
