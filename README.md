@@ -51,6 +51,38 @@ Function covered:
  - DATE_PART()
  - AGE()
 - EXTRACT()
+
+- ## 4. Conditional Functions
+Conditional functions are used to perform logical operations and handle conditional values in PostgreSQL.
+
+Function covered:
+- CASE - COALESCE() - NULLIF() - GREATEST() - LEAST()
+
+Example
+
+```sql
+SELECT employee_name,
+       CASE
+           WHEN salary > 50000 THEN 'High Salary'
+           ELSE 'Low Salary'
+       END AS salary_status
+FROM employees;
+```
+
+## 5. Window Functions
+Window functions perform calculations across a set of table rows related to the current row.
+
+Function covered:
+- ROW_NUMBER() - RANK() - DENSE_RANK() - LEAD() - LAG()
+
+Example
+
+```sql
+SELECT employee_name,
+       salary,
+       ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank
+FROM employees;
+```
 ## 🎯 Purpose
 
 This repository is created for:
@@ -77,6 +109,8 @@ PostgreSQL-Functions/
 ├── Aggregate_Functions.sql
 ├── String_Functions.sql
 ├── Date_Time_Functions.sql
+├── Conditional_Functions.sql
+├── Window_Functions.sql
 ├── README.md
 ```
 
